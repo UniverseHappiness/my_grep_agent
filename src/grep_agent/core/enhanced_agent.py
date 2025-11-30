@@ -210,6 +210,8 @@ class EnhancedSearchAgent:
                 
                 self.logger.info(f"LLM分析: {parsed['analysis'][:300]}...")
                 self.logger.info(f"信息充足: {parsed['is_sufficient']}, 置信度: {parsed['confidence']}")
+                self.logger.info(f"llm_response: {llm_response}")
+                self.logger.info(f"parsed:  {parsed}")
                 
                 # 检查是否已经足够
                 if parsed['is_sufficient']:

@@ -181,7 +181,7 @@ class EnhancedPromptBuilder:
         content_parts.append(
             f"\n**请分析：**\n"
             f"1. 这些信息是否足够回答用户的问题？\n"
-            f"2. 如果足够，请提供答案,并在答案中包含文件名与行号作为参考文献\n"
+            f"2. 如果足够，请提供答案，并在答案中包含文件名与行号作为参考文献\n"
             f"3. 如果不够，请生成下一条命令继续探索\n"
             f"4. 注意：还剩{remaining_iterations}次机会"
         )
