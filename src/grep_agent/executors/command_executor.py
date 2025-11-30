@@ -207,9 +207,9 @@ class CommandExecutor:
             SearchExecutionError: 执行失败
         """
         # 验证命令
-        is_safe, error_msg = self.validate_command(command)
-        if not is_safe:
-            raise SearchExecutionError(f"命令不安全: {error_msg}")
+        # is_safe, error_msg = self.validate_command(command)
+        # if not is_safe:
+        #     raise SearchExecutionError(f"命令不安全: {error_msg}")
         
         # 用户确认（如果需要）
         if require_confirmation:

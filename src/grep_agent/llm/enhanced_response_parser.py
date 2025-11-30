@@ -168,7 +168,7 @@ class EnhancedResponseParser:
                         break
         
         return {
-            'analysis': response[:500],  # 取前500字符作为分析
+            'analysis': response[:1000],  # 取前500字符作为分析
             'is_sufficient': is_sufficient,
             'confidence': 0.5,
             'answer': response if is_sufficient else None,
